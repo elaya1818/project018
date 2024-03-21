@@ -4,6 +4,7 @@ pipeline {
     tools{
         jdk 'jdk11'
         maven 'maven3'
+        Docker 'docker'
     }
     
     
@@ -27,6 +28,12 @@ pipeline {
                 sh "mvn test"
             }
         }
+        stage("docker Cases"){
+            steps{
+                sh "docker ps"
+            }
+        }
         
-       
+    }
+}
         
