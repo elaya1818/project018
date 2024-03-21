@@ -28,6 +28,13 @@ pipeline {
                 sh "mvn test"
             }
         }
+        stage("Test Cases"){
+            steps{
+               withDockerRegistry(credentialsId: 'd3f6cf5f-17c6-4fac-ba84-d90ea136cf09', toolname: 'docker') {
+                  sh "docker build -t image1 ."
+               }
+            }
+        }
         
         
     }
