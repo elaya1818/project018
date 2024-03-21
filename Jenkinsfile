@@ -31,9 +31,11 @@ pipeline {
         stage("docker Cases"){
             steps{
                 script{
-               withDockerRegistry(credentialsId: 'd3f6cf5f-17c6-4fac-ba84-d90ea136cf09', toolName: 'docker') {
-                  sh "docker build -t image1 ."
-               }
+              withDockerRegistry(credentialsId: '6d3d33dd-7c90-46e7-918a-4564ef706ec0', toolName: 'docker') {
+              sh "docker build -t image1 ."
+              }
+                 
+               
                }
             }
         }
