@@ -28,7 +28,7 @@ pipeline {
                 sh "mvn test"
             }
         }
-        stage("Test Cases"){
+        stage("docker Cases"){
             steps{
                 script{
                withDockerRegistry(credentialsId: 'd3f6cf5f-17c6-4fac-ba84-d90ea136cf09', toolname: 'docker') {
