@@ -31,10 +31,10 @@ pipeline {
     
          stage("docker Cases"){
             steps{
-                script{
-              withDockerRegistry(credentialsId: '6d3d33dd-7c90-46e7-918a-4564ef706ec0', toolName: 'docker') {
+                
+             
               sh "docker build -t image1 ."
-              }
+              
                  
                
                }
