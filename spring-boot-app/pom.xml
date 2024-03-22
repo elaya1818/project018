@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.abhishek</groupId>
-    <artifactId>project018</artifactId>
+    <artifactId>spring-boot-demo</artifactId>
     <version>1.0</version>
 
-    <name>project018</name>
+    <name>spring-boot-demo</name>
     <url></url>
 
     <parent>
