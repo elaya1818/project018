@@ -3,7 +3,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Simply the artifact path
-ARG artifact=target/jb-hello-world-maven-0.1.0-shaded.jar
+ARG artifact=target/project018.jar
 
 WORKDIR /opt/app
 
