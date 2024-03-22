@@ -10,7 +10,7 @@ pipeline {
     
     
     
-        
+        stages{
         stage("Git Checkout"){
             steps{
                 git branch: 'main', changelog: false, poll: false, url: 'https://github.com/elaya1818/project018.git'
@@ -28,7 +28,7 @@ pipeline {
                 sh "mvn test"
             }
         }
-    stages{
+    
          stage("docker Cases"){
             steps{
                 script{
