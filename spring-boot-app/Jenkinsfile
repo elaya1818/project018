@@ -34,7 +34,7 @@ pipeline {
             steps{
                 
              
-              sh "docker build -t image1 ."
+              sh "docker build -t image566 ."
               
                  
                
